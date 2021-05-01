@@ -45,7 +45,7 @@ function draw(){
 async function getBackgroundImg(){
 
     // write code to fetch time from API
-    var response = await fetch("http://worldtimeapi.org/api/ip");
+    var response = await fetch("https://worldtimeapi.org/api/ip");
     var responseJSON = await response.json()
     var dateTime = responseJSON.datetime;
     hour = dateTime.slice(11,13);
